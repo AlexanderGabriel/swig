@@ -17,7 +17,7 @@
 /* #undef HAVE_MEMORY_H */
 
 /* Define if you have PCRE library */
-/* #define HAVE_PCRE 1 */
+/* #undef HAVE_PCRE */
 
 /* Define if popen is available */
 #define HAVE_POPEN 1

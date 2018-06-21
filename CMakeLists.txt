@@ -22,7 +22,8 @@ add_executable(swig Source/CParse/cscanner.c Source/CParse/parser.c Source/CPars
     Source/Modules/ruby.cxx Source/Modules/s-exp.cxx Source/Modules/scilab.cxx Source/Modules/swigmain.cxx Source/Modules/tcl8.cxx Source/Modules/typepass.cxx Source/Modules/uffi.cxx
     Source/Modules/utils.cxx Source/Modules/xml.cxx Source/Preprocessor/cpp.c Source/Preprocessor/expr.c Source/Swig/cwrap.c Source/Swig/deprecate.c Source/Swig/error.c Source/Swig/extend.c
     Source/Swig/fragment.c Source/Swig/getopt.c Source/Swig/include.c Source/Swig/misc.c Source/Swig/naming.c Source/Swig/parms.c Source/Swig/scanner.c Source/Swig/stype.c Source/Swig/symbol.c
-    Source/Swig/tree.c Source/Swig/typeobj.c Source/Swig/typemap.c Source/Swig/typesys.c Source/Swig/wrapfunc.c
+    Source/Swig/tree.c Source/Swig/typeobj.c Source/Swig/typemap.c Source/Swig/typesys.c Source/Swig/wrapfunc.c Source/Doxygen/doxytranslator.cxx
+    Source/Doxygen/javadoc.cxx Source/Doxygen/doxyentity.cxx Source/Doxygen/doxyparser.cxx Source/Doxygen/pydoc.cxx
 )
 
 
