@@ -30,8 +30,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_YY_PARSER_H_INCLUDED
-# define YY_YY_PARSER_H_INCLUDED
+#ifndef YY_YY_CPARSE_PARSER_H_INCLUDED
+# define YY_YY_CPARSE_PARSER_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -187,13 +187,154 @@ extern int yydebug;
     DCOLON = 397
   };
 #endif
+/* Tokens.  */
+#define ID 258
+#define HBLOCK 259
+#define POUND 260
+#define STRING 261
+#define WSTRING 262
+#define INCLUDE 263
+#define IMPORT 264
+#define INSERT 265
+#define CHARCONST 266
+#define WCHARCONST 267
+#define NUM_INT 268
+#define NUM_FLOAT 269
+#define NUM_UNSIGNED 270
+#define NUM_LONG 271
+#define NUM_ULONG 272
+#define NUM_LONGLONG 273
+#define NUM_ULONGLONG 274
+#define NUM_BOOL 275
+#define TYPEDEF 276
+#define TYPE_INT 277
+#define TYPE_UNSIGNED 278
+#define TYPE_SHORT 279
+#define TYPE_LONG 280
+#define TYPE_FLOAT 281
+#define TYPE_DOUBLE 282
+#define TYPE_CHAR 283
+#define TYPE_WCHAR 284
+#define TYPE_VOID 285
+#define TYPE_SIGNED 286
+#define TYPE_BOOL 287
+#define TYPE_COMPLEX 288
+#define TYPE_TYPEDEF 289
+#define TYPE_RAW 290
+#define TYPE_NON_ISO_INT8 291
+#define TYPE_NON_ISO_INT16 292
+#define TYPE_NON_ISO_INT32 293
+#define TYPE_NON_ISO_INT64 294
+#define LPAREN 295
+#define RPAREN 296
+#define COMMA 297
+#define SEMI 298
+#define EXTERN 299
+#define INIT 300
+#define LBRACE 301
+#define RBRACE 302
+#define PERIOD 303
+#define CONST_QUAL 304
+#define VOLATILE 305
+#define REGISTER 306
+#define STRUCT 307
+#define UNION 308
+#define EQUAL 309
+#define SIZEOF 310
+#define MODULE 311
+#define LBRACKET 312
+#define RBRACKET 313
+#define BEGINFILE 314
+#define ENDOFFILE 315
+#define ILLEGAL 316
+#define CONSTANT 317
+#define NAME 318
+#define RENAME 319
+#define NAMEWARN 320
+#define EXTEND 321
+#define PRAGMA 322
+#define FEATURE 323
+#define VARARGS 324
+#define ENUM 325
+#define CLASS 326
+#define TYPENAME 327
+#define PRIVATE 328
+#define PUBLIC 329
+#define PROTECTED 330
+#define COLON 331
+#define STATIC 332
+#define VIRTUAL 333
+#define FRIEND 334
+#define THROW 335
+#define CATCH 336
+#define EXPLICIT 337
+#define STATIC_ASSERT 338
+#define CONSTEXPR 339
+#define THREAD_LOCAL 340
+#define DECLTYPE 341
+#define AUTO 342
+#define NOEXCEPT 343
+#define OVERRIDE 344
+#define FINAL 345
+#define USING 346
+#define NAMESPACE 347
+#define NATIVE 348
+#define INLINE 349
+#define TYPEMAP 350
+#define EXCEPT 351
+#define ECHO 352
+#define APPLY 353
+#define CLEAR 354
+#define SWIGTEMPLATE 355
+#define FRAGMENT 356
+#define WARN 357
+#define LESSTHAN 358
+#define GREATERTHAN 359
+#define DELETE_KW 360
+#define DEFAULT 361
+#define LESSTHANOREQUALTO 362
+#define GREATERTHANOREQUALTO 363
+#define EQUALTO 364
+#define NOTEQUALTO 365
+#define ARROW 366
+#define QUESTIONMARK 367
+#define TYPES 368
+#define PARMS 369
+#define NONID 370
+#define DSTAR 371
+#define DCNOT 372
+#define TEMPLATE 373
+#define OPERATOR 374
+#define CONVERSIONOPERATOR 375
+#define PARSETYPE 376
+#define PARSEPARM 377
+#define PARSEPARMS 378
+#define DOXYGENSTRING 379
+#define DOXYGENPOSTSTRING 380
+#define CAST 381
+#define LOR 382
+#define LAND 383
+#define OR 384
+#define XOR 385
+#define AND 386
+#define LSHIFT 387
+#define RSHIFT 388
+#define PLUS 389
+#define MINUS 390
+#define STAR 391
+#define SLASH 392
+#define MODULO 393
+#define UMINUS 394
+#define NOT 395
+#define LNOT 396
+#define DCOLON 397
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 
 union YYSTYPE
 {
-#line 1521 "parser.y" /* yacc.c:1909  */
+#line 1521 "CParse/parser.y" /* yacc.c:1909  */
 
   const char  *id;
   List  *bases;
@@ -239,7 +380,7 @@ union YYSTYPE
   int           intvalue;
   Node         *node;
 
-#line 243 "parser.h" /* yacc.c:1909  */
+#line 384 "CParse/parser.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -252,4 +393,4 @@ extern YYSTYPE yylval;
 
 int yyparse (void);
 
-#endif /* !YY_YY_PARSER_H_INCLUDED  */
+#endif /* !YY_YY_CPARSE_PARSER_H_INCLUDED  */

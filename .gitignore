@@ -82,7 +82,6 @@ swig.spec
 CCache/ccache-swig
 CCache/ccache-swig.1
 CCache/web/ccache-swig-man.html
-Lib/swigwarn.swg
 Source/eswig
 Source/TAGS
 swig
