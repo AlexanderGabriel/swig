@@ -74,7 +74,7 @@
 #define SWIG_CXX "g++"
 
 /* Directory for SWIG system-independent libraries */
-#define SWIG_LIB "C:/dev/work/swig/Lib"
+#define SWIG_LIB "C:/projects/swig/Lib"
 
 /* Directory for SWIG system-independent libraries (Unix install on native
    Windows) */
