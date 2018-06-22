@@ -74,11 +74,11 @@
 #define SWIG_CXX "g++"
 
 /* Directory for SWIG system-independent libraries */
-#define SWIG_LIB "/usr/local/share/swig/4.0.0"
+#define SWIG_LIB "C:/dev/work/swig/Lib"
 
 /* Directory for SWIG system-independent libraries (Unix install on native
    Windows) */
-#define SWIG_LIB_WIN_UNIX "C:/cygwin64/usr/local/share/swig/4.0.0"
+#define SWIG_LIB_WIN_UNIX "C:/dev/work/swig/Lib"
 
 /* Platform that SWIG is built for */
 #define SWIG_PLATFORM "x86_64-unknown-cygwin"
