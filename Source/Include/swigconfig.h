@@ -78,7 +78,7 @@
 
 /* Directory for SWIG system-independent libraries (Unix install on native
    Windows) */
-#define SWIG_LIB_WIN_UNIX "C:/projects/mapserver/swig/Lib"
+#define SWIG_LIB_WIN_UNIX "C:/projects/swig/Lib"
 
 /* Platform that SWIG is built for */
 #define SWIG_PLATFORM "x86_64-unknown-cygwin"
